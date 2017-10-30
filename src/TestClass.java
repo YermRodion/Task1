@@ -8,6 +8,6 @@ public class TestClass {
     }
 
     public void printTestText(){
-        System.out.println("Success!1");
+        System.out.println("Success!111");
     }
 }
