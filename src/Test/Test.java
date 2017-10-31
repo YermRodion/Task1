@@ -1,4 +1,5 @@
 package Test;
+import Instruments.Percussion.Drums;
 import Instruments.Stringed.ElectroGuitar;
 
 /**
@@ -9,14 +10,16 @@ public  class Test {
 
 
     public static void main(String[] args) {
-        ElectroGuitar solo = new ElectroGuitar("Yamaha", false, 90);
+        ElectroGuitar solo = new ElectroGuitar("Gibson LesPaul", true, 90);
+        Drums drum = new Drums(1, 30, "Yamaha");
 
-        System.out.println(solo.getBrandName());
         System.out.println(solo.toString());
-        solo.setDistortion((solo.getBrandName().equals("Yamaha")));
-        System.out.println(solo.getGain());
-        solo.setGain(100);
-        System.out.println(solo.getGain());
+        System.out.println(solo.getBrandName());
+        System.out.println(drum.toString());
+        System.out.println(drum.getBrandName());
+
+
         solo.play();
+        drum.play();
     }
 }

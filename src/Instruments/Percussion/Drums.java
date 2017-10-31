@@ -10,10 +10,10 @@ import interfaces.Tunnable;
  */
 public class Drums extends Instrument implements Assembleble, Carriable, Tunnable {
 
-    private short numOfDrums;
+    private int numOfDrums;
     private int weight;
 
-    public Drums(short numOfDrums, int weight, String brandName) {
+    public Drums(int numOfDrums, int weight, String brandName) {
         this.numOfDrums = numOfDrums;
         this.weight = weight;
         this.brandName = brandName;
@@ -27,7 +27,7 @@ public class Drums extends Instrument implements Assembleble, Carriable, Tunnabl
         this.numOfDrums = numOfDrums;
     }
 
-    public short getNumOfDrums() {
+    public int getNumOfDrums() {
         return numOfDrums;
     }
 
@@ -40,7 +40,7 @@ public class Drums extends Instrument implements Assembleble, Carriable, Tunnabl
     }
 
     public void play(){
-        System.out.println("Ba Dum Tss");
+        System.out.println("Ba Dum Tss...");
     }
 
     @Override
