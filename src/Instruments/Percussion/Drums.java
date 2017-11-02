@@ -5,9 +5,7 @@ import interfaces.Assembleble;
 import interfaces.Carriable;
 import interfaces.Tunnable;
 
-/**
- * Created by RODION on 31.10.2017.
- */
+
 public class Drums extends Instrument implements Assembleble, Carriable, Tunnable {
 
     private int numOfDrums;
@@ -17,10 +15,6 @@ public class Drums extends Instrument implements Assembleble, Carriable, Tunnabl
         this.numOfDrums = numOfDrums;
         this.weight = weight;
         this.brandName = brandName;
-    }
-
-    public void baDumTsss(){
-
     }
 
     public void setNumOfDrums(short numOfDrums) {

@@ -2,13 +2,11 @@ package Instruments.Keyboard;
 
 import Instruments.Instrument;
 
-/**
- * Created by RODION on 31.10.2017.
- */
+
 public abstract class Keyboard extends Instrument {
-    int numOfKeys;
-    int weight;
-    boolean havePedal;
+    protected int numOfKeys;
+    protected int weight;
+    protected boolean havePedal;
 
     public void setNumOfKeys(int numOfKeys) {
         this.numOfKeys = numOfKeys;

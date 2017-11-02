@@ -3,9 +3,6 @@ package Instruments.Percussion;
 import Instruments.Instrument;
 import interfaces.Carriable;
 
-/**
- * Created by RODION on 31.10.2017.
- */
 public class Maraca extends Instrument implements Carriable {
 
     private String woodType;
@@ -17,8 +14,12 @@ public class Maraca extends Instrument implements Carriable {
         this.brandName = brandName;
     }
 
-    public void shake(){}
-    public void danceAndShake(){}
+    public void shake(){
+        System.out.println("Shaking maraca...");
+    }
+    public void danceAndShake(){
+        System.out.println("Now we are dancing and shaking maraca");
+    }
 
     public String getWoodType() {
         return woodType;
@@ -29,7 +30,7 @@ public class Maraca extends Instrument implements Carriable {
     }
 
     public void play(){
-        System.out.println("Shaking Marrrraca!!!");
+        System.out.println("Lets play the marrrraca!!!");
     }
 
     @Override

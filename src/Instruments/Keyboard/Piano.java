@@ -2,9 +2,7 @@ package Instruments.Keyboard;
 
 import interfaces.Tunnable;
 
-/**
- * Created by RODION on 30.10.2017.
- */
+
 public class Piano extends Keyboard implements Tunnable {
 
     public Piano (int numOfKeys, int weight, boolean havePedal, String brandName){

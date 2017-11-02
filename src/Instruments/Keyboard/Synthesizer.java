@@ -4,9 +4,7 @@ import interfaces.Assembleble;
 import interfaces.Carriable;
 import interfaces.Pluggable;
 
-/**
- * Created by RODION on 30.10.2017.
- */
+
 public class Synthesizer extends Keyboard implements Pluggable, Carriable, Assembleble {
     private int numOfEffects;
     private double memory;
@@ -26,15 +24,12 @@ public class Synthesizer extends Keyboard implements Pluggable, Carriable, Assem
         System.out.println("Synthesizer is playing");
     }
 
-
-
     public int getNumOfEffects() {
         return numOfEffects;
     }
 
     public void setMemory(double memory) {
         this.memory = memory;
-
     }
 
     public double getMemory() {

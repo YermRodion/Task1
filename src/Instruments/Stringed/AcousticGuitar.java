@@ -4,16 +4,13 @@ import Instruments.Percussion.Maraca;
 
 import java.util.HashSet;
 
-/**
- * Created by RODION on 30.10.2017.
- */
+
 public class AcousticGuitar extends Guitar{
     private HashSet<String> styles = new HashSet<>();
 
     public AcousticGuitar(String brandName){
         this.brandName = brandName;
     }
-
 
     public HashSet<String> getStyles() {
         return styles;
@@ -23,11 +20,9 @@ public class AcousticGuitar extends Guitar{
         this.styles = styles;
     }
 
-
     public void play() {
         System.out.println("Acoustic is playing");
     }
-
 
     @Override
     public void carry() {
